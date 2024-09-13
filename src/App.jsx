@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Signup from './Component/Signup/Signup';

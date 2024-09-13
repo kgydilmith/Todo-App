@@ -1,4 +1,3 @@
-// Signup.jsx
 import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
@@ -21,15 +20,15 @@ const Signup = () => {
     }),
     onSubmit: (values) => {
       console.log('Form data', values);
-      // Simulate registration logic here
+      
       alert('Registered successfully!');
       navigate('/login'); // Redirect to login page after registration
     },
   });
-
   return (
-    <div className="signup-container">
-      <h2>Create an Account</h2>
+    <div className='signup'>
+<    div className="signup-container">
+      <h2>Register</h2>
       <form onSubmit={formik.handleSubmit} className="signup-form">
         <label htmlFor="name">Name</label>
         <input
@@ -67,6 +66,9 @@ const Signup = () => {
         <button type="submit">Register</button>
       </form>
     </div>
+    </div>
+
+    
   );
 };
 

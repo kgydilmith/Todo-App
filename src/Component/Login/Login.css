@@ -1,9 +1,16 @@
+.login{
+  background-color:#D4F1F4;
+  height: 100vh; 
+}
 .login-container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 2rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f5f2e9;
+  position: relative;
+  top: 100px;
   }
   
   .login-container h2 {
@@ -23,7 +30,7 @@
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #28a745;
     color: white;
     border: none;
     border-radius: 5px;
@@ -33,5 +40,27 @@
   .login-container .message {
     text-align: center;
     color: red;
+  }
+
+
+  @media (max-width: 768px) {
+    .login-container {
+      max-width: 70%; 
+      padding: 1.5rem; 
+    }
+  
+    .login-container h2 {
+      font-size: 1.5rem; 
+    }
+  
+    .login-container input {
+      padding: 8px;
+      margin: 0.75rem 0; 
+    }
+  
+    .login-container button {
+      padding: 8px; 
+      font-size: 1rem; 
+    }
   }
   

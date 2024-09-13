@@ -25,7 +25,8 @@ const Login = () => {
   });
 
   return (
-    <div className="login-container">
+    <div className="login">
+      <div className="login-container">
       <h2>Login</h2>
       <form onSubmit={formik.handleSubmit} className="login-form">
         <label htmlFor="email">Email</label>
@@ -56,6 +57,8 @@ const Login = () => {
         Don't have an account? <a href="/signup">Create account</a> 
       </p>
     </div>
+    </div>
+    
   );
 };
 
