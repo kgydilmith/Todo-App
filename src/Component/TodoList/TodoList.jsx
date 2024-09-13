@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import './TodoList.css';
-import TodoForm from '../TodoForm/TodoForm';
-import TodoItem from '../TodoItem/TodoItem';
+import React, { useState } from "react";
+import "./TodoList.css";
+import TodoForm from "../TodoForm/TodoForm";
+import TodoItem from "../TodoItem/TodoItem";
 
 
 const TodoList = () => {
@@ -19,7 +19,13 @@ const TodoList = () => {
 
   const editTodo = (index, newTitle, newDescription, newTag, newDate) => {
     const newTodos = [...todos];
-    newTodos[index] = { ...newTodos[index], title: newTitle, description: newDescription, tag: newTag, date: newDate };
+    newTodos[index] = {
+      ...newTodos[index],
+      title: newTitle,
+      description: newDescription,
+      tag: newTag,
+      date: newDate,
+    };
     setTodos(newTodos);
   };
 
@@ -30,25 +36,30 @@ const TodoList = () => {
   };
 
   return (
-    <div className="todo-list-container">
-      
-      
-      <div className="todo-list">
-        <h1>Todo List</h1>
-        {todos.map((todo, index) => (
-          <TodoItem
-            key={index}
-            index={index}
-            todo={todo}
-            deleteTodo={deleteTodo}
-            editTodo={editTodo}
-            toggleCompletion={toggleCompletion}
-          />
-        ))}
-      </div>
+      <div className="todo-list-container">
 
-      <TodoForm addTodo={addTodo} />
-    </div>
+        <div className="list-right">
+          
+        </div>
+
+
+        <div className="todo-list">
+          <h1>Today</h1>
+          {todos.map((todo, index) => (
+            <TodoItem
+              key={index}
+              index={index}
+              todo={todo}
+              deleteTodo={deleteTodo}
+              editTodo={editTodo}
+              toggleCompletion={toggleCompletion}
+            />
+          ))}
+        </div>
+
+        <TodoForm addTodo={addTodo} />
+      </div>
+    
   );
 };
 
