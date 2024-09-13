@@ -45,7 +45,7 @@ const TodoItem = ({ todo, index, deleteTodo, editTodo, toggleCompletion }) => {
         <div className='details'>
           <h3>{todo.title}</h3>
           <p>{todo.description}</p>
-          <p><strong>Tag:</strong> {todo.tag}</p>
+          <p><strong>Lists:</strong> {todo.tag}</p>
           <p><strong>Date:</strong> {todo.date}</p>
           <button onClick={() => toggleCompletion(index)}>
             {todo.completed ? 'Mark as Incomplete' : 'Mark as Completed'}

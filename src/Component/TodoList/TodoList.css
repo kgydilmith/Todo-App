@@ -3,14 +3,91 @@
     background-color: #D4F1F4;
     margin: 0 auto;
     padding: 20px;
-      
+    height: 85vh;
+    gap: 15px;  
     }
     
-    .todo-list {
-      margin-top: 20px;
-    }
-    
-    h1 {
-      color: #333;
-    }
-    
+
+ .todo-left{
+  margin: 10px;
+  width: 35vh;
+  border-radius:7px;
+  background-color: #f5f2e9;
+  padding-left: 30px;
+  padding-right: 20px;
+ } 
+
+ .todo-left p{
+  font-weight: 600px;
+  font-size: 18px;
+ }
+
+ .todo-left ul{
+  list-style-type: none;
+  margin-bottom: 30px;
+ }
+
+ .task li{
+  margin-bottom: 15px;
+ }
+
+ .icon1{
+  margin-right: 15px;
+ }
+
+ .lists li{
+  font-display: flex;
+  align-items: center; 
+  margin-bottom: 10px;
+ }
+
+ .icon2{
+  margin-right: 15px;
+ }
+
+.tag ul{
+      padding: 0;
+      margin: 0; 
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+}
+.tag li:nth-child(1){
+  flex: 1 1 5px; 
+      padding: 5px;
+      background-color: #f37676; 
+      border-radius: 5px; 
+      text-align: center;
+}
+.tag li:nth-child(2){
+  flex: 1 1 5px; 
+      padding: 5px;
+      background-color: #4451e7; 
+      border-radius: 5px; 
+      text-align: center;
+}
+.tag li:nth-child(3){
+  flex: 1 1 5px; 
+      padding: 5px;
+      background-color: #5bedb0; 
+      border-radius: 5px; 
+      text-align: center;
+}
+
+
+
+
+ .todo-center{
+  width: 85vh;
+  padding-top: 10px;
+ }
+ 
+ .todo-right{
+  width: 25vh;
+  height: 82vh;
+  margin: 40px;
+  margin-top:15px;
+  background-color: #f5f2e9;
+  padding: 0px 100px 0px 50px;
+  border-radius: 5px;
+ }

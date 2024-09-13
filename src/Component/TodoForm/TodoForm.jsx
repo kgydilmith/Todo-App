@@ -20,6 +20,7 @@ const TodoForm = ({ addTodo }) => {
 
   return (
     <form className="todo-form" onSubmit={handleSubmit}>
+      <h1>Task:</h1>
       <input
         type="text"
         placeholder="Title"
@@ -33,6 +34,9 @@ const TodoForm = ({ addTodo }) => {
         onChange={(e) => setDescription(e.target.value)}
         required
       ></textarea>
+
+      <div className='list'>
+       <p>List</p>
       <select
         value={tag}
         onChange={(e) => setTag(e.target.value)}
@@ -42,13 +46,19 @@ const TodoForm = ({ addTodo }) => {
         <option value="personal">Personal</option>
         <option value="educational">Educational</option>
       </select>
+     </div>
+
+       <div className='date'>
+        <p>Date</p>
       <input
         type="date"
         value={date}
         onChange={(e) => setDate(e.target.value)}
         required
       />
-      <button type="submit">Add Todo</button>
+       </div>
+      
+      <button type="submit">Add To do</button>
     </form>
   );
 };

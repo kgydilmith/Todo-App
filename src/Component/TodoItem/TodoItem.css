@@ -27,5 +27,15 @@
     flex-direction: column;
     gap: 20px;
   }
+
+  .edit input,
+  .edit textarea,
+  .edit select,
+  .edit button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 35vh;
+  }
   
   

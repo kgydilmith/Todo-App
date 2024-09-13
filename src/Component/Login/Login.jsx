@@ -1,4 +1,3 @@
-// Login.jsx
 import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
@@ -19,7 +18,7 @@ const Login = () => {
     }),
     onSubmit: (values) => {
       console.log('Form data', values);
-      // Simulate login logic here
+      
       alert('Logged in successfully!');
       navigate('/'); // Redirect to home page after login
     },
@@ -54,7 +53,7 @@ const Login = () => {
         <button type="submit">Login</button>
       </form>
       <p>
-        Don't have an account? <a href="/signup">Create account</a> {/* Use anchor tag for direct link */}
+        Don't have an account? <a href="/signup">Create account</a> 
       </p>
     </div>
   );
