@@ -1,0 +1,27 @@
+.todo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .todo-form input,
+  .todo-form textarea,
+  .todo-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .todo-form button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .todo-form button:hover {
+    background-color: #218838;
+  }
+  
