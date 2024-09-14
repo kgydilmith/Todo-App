@@ -1,116 +1,114 @@
 .todo-list-container {
-    display: flex;
-    background-color: #D4F1F4;
-    margin: 0 auto;
-    padding: 30px;
-    gap:5px;  
-    }
-    
+  display: flex;
+  background-color: #d4f1f4;
+  margin: 0 auto;
+  padding: 30px;
+  gap: 5px;
+}
 
- .todo-left{
+.todo-left {
   margin: 5px;
-  width: 25vh;
+  width: 35vh;
   height: 82vh;
-  border-radius:7px;
+  border-radius: 7px;
   background-color: #f5f2e9;
   padding-left: 30px;
   padding-right: 20px;
- } 
+}
 
- .todo-left p{
+.todo-left p {
   font-weight: 600px;
   font-size: 18px;
- }
+}
 
- .todo-left ul{
+.todo-left ul {
   list-style-type: none;
   margin-bottom: 30px;
- }
+}
 
- .task li{
+.task li {
   margin-bottom: 15px;
- }
+}
 
- .icon1{
+.icon1 {
   margin-right: 15px;
- }
+}
 
- .lists li{
+.lists li {
   font-display: flex;
-  align-items: center; 
+  align-items: center;
   margin-bottom: 10px;
- }
+}
 
- .icon2{
+.icon2 {
   margin-right: 15px;
- }
+}
 
-.tag ul{
-      padding: 0;
-      margin: 0; 
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
+.tag ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }
-.tag li:nth-child(1){
-  flex: 1 1 5px; 
+.tag li:nth-child(1) {
+  flex: 1 1 5px;
   padding: 5px;
-  background-color: #f37676; 
-  border-radius: 5px; text-align: center;
-}
-.tag li:nth-child(2){
-  flex: 1 1 5px; 
-  padding: 5px;
-  background-color: #4451e7; 
-  border-radius: 5px; 
+  background-color: #f37676;
+  border-radius: 5px;
   text-align: center;
 }
-.tag li:nth-child(3){
-  flex: 1 1 5px; 
+.tag li:nth-child(2) {
+  flex: 1 1 5px;
   padding: 5px;
-  background-color: #5bedb0; 
-  border-radius: 5px; 
-  text-align: center;        
+  background-color: #4451e7;
+  border-radius: 5px;
+  text-align: center;
+}
+.tag li:nth-child(3) {
+  flex: 1 1 5px;
+  padding: 5px;
+  background-color: #5bedb0;
+  border-radius: 5px;
+  text-align: center;
 }
 
-
- .todo-center{
+.todo-center {
   margin: 5px;
   width: 85vh;
   border-radius: 5px;
-  padding:0px 20px;
+  padding: 0px 20px;
   background-color: #f5f2e9;
- }
- 
- .todo-right{
-  width: 25vh;
+}
+
+.todo-right {
+  width: 35vh;
   height: 82vh;
   margin: 5px;
   background-color: #f5f2e9;
   padding: 0px 50px 0px 75px;
   border-radius: 5px;
- }
+}
 
-
- @media (max-width: 768px) {
+@media (max-width: 768px) {
   .todo-list-container {
-    flex-direction: column; 
-    gap: 10px; 
-    padding: 10px; 
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
   }
 
   .todo-left,
   .todo-center,
   .todo-right {
-    width: 90%; 
-    height: auto; 
+    width: 90%;
+    height: auto;
   }
 
   .todo-left {
     padding-left: 20px;
     padding-right: 15px;
     padding-bottom: 20px;
-    margin: 5px 10px; 
+    margin: 5px 10px;
   }
 
   .todo-center {
